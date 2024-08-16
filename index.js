@@ -16,8 +16,8 @@ app.use(express.json());
 //Mi api
 const uri = "mongodb+srv://dyepesdev:bL3VnjggQIW29kzy@testdb.ylzrmom.mongodb.net/BookList";
 // const uri = "mongodb+srv://apr1:apr123@cluster0.f9d6o.gcp.mongodb.net/Activities-apr2";
-mongoose.connect(uri, { useNewUrlParser: true,   useUnifiedTopology: true   }
-);
+//mongoose.connect(uri, { useNewUrlParser: true,   useUnifiedTopology: true   }
+mongoose.connect(uri);
 const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
